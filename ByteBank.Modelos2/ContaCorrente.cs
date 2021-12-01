@@ -46,6 +46,9 @@ namespace ByteBank.Modelos2
         /// <summary>
         /// Cria uma instancia de conta corrente com os argumentos utilizados
         /// </summary>
+        /// <exception cref="ArgumentException">Exceção lançada quando o valor de <paramref name="numAgencia"/> é menor que 0</exception>
+        /// 
+        /// 
         /// <param name="numAgencia"> Representa o valor da propriedade _agencia e deve ser maior que 0</param>
         /// <param name="numConta">Representa o valor da propriedade _numero e deve ser maior que 0</param>
         public ContaCorrente(int numAgencia, int numConta)
