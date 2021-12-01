@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using ByteBank.Modelos2;
 namespace ByteBank.Modelos2.Funcionarios
 {
     public abstract class Funcionarios

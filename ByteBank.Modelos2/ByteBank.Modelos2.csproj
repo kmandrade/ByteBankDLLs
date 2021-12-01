@@ -45,9 +45,12 @@
     <Compile Include="ContaCorrente.cs" />
     <Compile Include="Funcionarios\Designer.cs" />
     <Compile Include="Funcionarios\Diretor.cs" />
+    <Compile Include="Funcionarios\FuncionarioAutenticavel.cs" />
     <Compile Include="Funcionarios\Funcionarios.cs" />
     <Compile Include="Funcionarios\SistemaInterno.cs" />
+    <Compile Include="IAutenticavel.cs" />
     <Compile Include="LeitorDeArquivos.cs" />
+    <Compile Include="ParceiroComercial.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SaldoInsuficienteException.cs" />
   </ItemGroup>
