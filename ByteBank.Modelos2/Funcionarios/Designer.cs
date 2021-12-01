@@ -7,20 +7,21 @@ using System.Threading.Tasks;
 
 namespace ByteBank.Modelos2.Funcionarios
 {
-    public class Designer : Funcionarios
+    public class Designer : Funcionario
     {
         public Designer(double salario, string cpf) : base(salario, cpf)
         {
 
         }
-        public override void aumentaSalario()
+        public override void AumentarSalario()
         {
             salario *= 1.11;
         }
-        public override double getBonificacao()
+        public override double GetBonificacao()
         {
             return salario * 0.17;
         }
+        
 
 
 

@@ -48,6 +48,7 @@
     <Compile Include="Funcionarios\FuncionarioAutenticavel.cs" />
     <Compile Include="Funcionarios\Funcionarios.cs" />
     <Compile Include="Funcionarios\SistemaInterno.cs" />
+    <Compile Include="GerenciadorBonificacao.cs" />
     <Compile Include="IAutenticavel.cs" />
     <Compile Include="LeitorDeArquivos.cs" />
     <Compile Include="ParceiroComercial.cs" />

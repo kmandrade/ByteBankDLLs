@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace ByteBank.Modelos2.Funcionarios
 {
-    public class Diretor : Funcionarios
+    public class Diretor : Funcionario
     {
         public string Senha { get; set; }
 
-        public override double getBonificacao()//sobre poe o metodo de funcionario
+        public override double GetBonificacao()//sobre poe o metodo de funcionario
         {
             // return salario + base.getBonificacao(); //pega o metodo inteiro getbonificacao de fun e atribui aqui atraves do base
             return salario *= 0.50;
@@ -23,7 +23,7 @@ namespace ByteBank.Modelos2.Funcionarios
             Console.WriteLine("Criando diretor");
         }
 
-        public override void aumentaSalario()
+        public override void AumentarSalario()
         {
             salario *= 0.50;
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using ByteBank.Modelos2;
 namespace ByteBank.Modelos2.Funcionarios
 {
-    public abstract class Funcionarios
+    public abstract class Funcionario
     {
 
 
@@ -37,7 +37,7 @@ namespace ByteBank.Modelos2.Funcionarios
             salario *= 1.10;
         }
 
-        public Funcionarios(double salario, string cpf)//saber o total de funcionarios toda vez que criar um obj do tipo funcionario ele cria mais 1
+        public Funcionario(double salario, string cpf)//saber o total de funcionarios toda vez que criar um obj do tipo funcionario ele cria mais 1
         {
             totalFuncionarios++;
 
@@ -45,7 +45,9 @@ namespace ByteBank.Modelos2.Funcionarios
             this.salario = salario;
         }
 
-
+        public abstract void AumentarSalario();
+        //internal protected abstract double GetBonificacao(); // todo mundo desse projeto tera acesso a esse metodo menos outro projeto somente internal, protected ele pode usar em outros projetos
+        public abstract double GetBonificacao();
 
     }
 }

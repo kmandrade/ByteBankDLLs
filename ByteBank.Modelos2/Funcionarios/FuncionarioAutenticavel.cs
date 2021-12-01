@@ -7,7 +7,7 @@ using ByteBank.Modelos2;
 
 namespace ByteBank.Modelos2.Funcionarios
 {
-    public class FuncionarioAutenticavel: Funcionarios, IAutenticavel
+    public class FuncionarioAutenticavel: Funcionario, IAutenticavel
     {
         public string Senha { get; set; }
 
@@ -19,6 +19,16 @@ namespace ByteBank.Modelos2.Funcionarios
         public bool Autenticar(string senha)
         {
             return Senha == senha;
+        }
+
+        public override void AumentarSalario()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override double GetBonificacao()
+        {
+            throw new NotImplementedException();
         }
     }
 }
