@@ -5,6 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 namespace ByteBank.Modelos2
 {
+    /// <summary>
+    /// Define uma conta corrente do banco ByteBank.
+    /// </summary>
     public class ContaCorrente
     {
 
@@ -39,8 +42,15 @@ namespace ByteBank.Modelos2
         public double taxaOpp { get; set; }
         private double _saldo = 100;
 
+
+        /// <summary>
+        /// Cria uma instancia de conta corrente com os argumentos utilizados
+        /// </summary>
+        /// <param name="numAgencia"> Representa o valor da propriedade _agencia e deve ser maior que 0</param>
+        /// <param name="numConta">Representa o valor da propriedade _numero e deve ser maior que 0</param>
         public ContaCorrente(int numAgencia, int numConta)
         {
+
             if (numAgencia <= 0)
             {
                 throw new ArgumentException("a agencia deve ser maior que 0", nameof(numAgencia));
