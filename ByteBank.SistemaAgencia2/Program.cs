@@ -15,13 +15,15 @@ namespace ByteBank.SistemaAgencia2
         static void Main(string[] args)
         {
 
-            ContaCorrente conta = new ContaCorrente(123,123);
-            Console.WriteLine(conta.Numero);
-            
 
 
 
-            Console.WriteLine("fim da app");
+            string urlParametros = "http://www.bytebank.com/cambio?moedaOrigem=real&moedaDestino=dolar";
+            ExtratorValorDeArgumentos extradorDeValores = new ExtratorValorDeArgumentos(urlParametros);
+            Console.WriteLine(extradorDeValores.GetValor("moedaDestino"));
+
+
+
             Console.ReadLine();
         }
     }
