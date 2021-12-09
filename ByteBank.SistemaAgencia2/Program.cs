@@ -17,20 +17,29 @@ namespace ByteBank.SistemaAgencia2
 
 
 
-
-
-
-
-
             
 
-
-
-            
 
 
             Console.ReadLine();
         }
+
+
+        //static void TestaArrayConta()
+        //{
+        //    ContaCorrente[] contas = new ContaCorrente[3];
+        //    contas[0] = new ContaCorrente(123, 11111);
+        //    contas[1] = new ContaCorrente(123, 22222);
+        //    contas[2] = new ContaCorrente(123, 33333);
+
+        //    for (int i = 0; i < contas.Length; i++)
+        //    {
+
+        //        Console.WriteLine($"O numero das contas sao {contas[i].Numero}");
+
+        //    }
+
+        //}
 
         //static void TetandoRegex()
         //{
