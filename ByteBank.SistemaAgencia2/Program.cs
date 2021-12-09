@@ -5,25 +5,50 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using ByteBank.Modelos2;
+using ByteBank.SistemaAgencia;
+
 namespace ByteBank.SistemaAgencia2
 
 {
 
-    
+
     public class Program
     {
         static void Main(string[] args)
         {
+            List<int> idades = new List<int>();
 
-
-
+            ListExtensoes.AdicionarVarios(idades, 12, 13, 14, 15);
             
 
+            for (int i = 0; i < idades.Count; i++)
+            {
+                Console.WriteLine(idades[i]);
+            }
+             
 
 
             Console.ReadLine();
         }
 
+        static void TestaListaDeObject()
+        {
+            ListaDeObject listaDeIdades = new ListaDeObject();
+
+            listaDeIdades.Adicionar(10);
+            listaDeIdades.Adicionar(5);
+            listaDeIdades.Adicionar(4);
+            listaDeIdades.Adicionar("um texto qualquer");
+            listaDeIdades.AdicionarVarios(16, 23, 60);
+
+            for (int i = 0; i < listaDeIdades.Tamanho; i++)
+            {
+                int idade = (int)listaDeIdades[i];
+                Console.WriteLine($"Idade no indice {i}: {idade}");
+            }
+        }
+    }
+}
 
         //static void TestaArrayConta()
         //{
@@ -60,6 +85,5 @@ namespace ByteBank.SistemaAgencia2
         //    //Console.WriteLine(extradorDeValores.GetValor("moedaDestino"));
 
         //}
-    }
+  
     
-}
