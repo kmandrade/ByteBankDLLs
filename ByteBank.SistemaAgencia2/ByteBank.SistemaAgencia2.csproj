@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComparadorDeContas\ComparadorDeContasPorAgencia.cs" />
     <Compile Include="Extensoes\ListExtensoes.cs" />
     <Compile Include="ExtratorValorDeArgumentos.cs" />
     <Compile Include="Lista.cs" />

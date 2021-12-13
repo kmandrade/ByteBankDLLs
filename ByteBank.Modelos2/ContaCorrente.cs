@@ -10,7 +10,7 @@ namespace ByteBank.Modelos2
     /// </summary>
     public class ContaCorrente : IComparable
     {
-
+        
         public Cliente Titular { get; set; }
 
 

@@ -6,6 +6,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using ByteBank.Modelos2;
 using ByteBank.SistemaAgencia;
+using ByteBank.SistemaAgencia2.ComparadorDeContas;
 using ByteBank.SistemaAgencia2.Extensoes;
 namespace ByteBank.SistemaAgencia2
 
@@ -25,13 +26,14 @@ namespace ByteBank.SistemaAgencia2
                 new ContaCorrente(222,3333),
                 new ContaCorrente(111,1111),
                 
+                
             };
            
             
-            contas.Sort();
+            contas.Sort(new ComparadorDeContasPorAgencia());
             foreach (var conta in contas)
             {
-                Console.WriteLine(conta.Numero);
+                Console.WriteLine(conta.Agencia);
             }
 
 
