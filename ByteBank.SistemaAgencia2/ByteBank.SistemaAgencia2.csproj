@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensoes\ListExtensoes.cs" />
     <Compile Include="ExtratorValorDeArgumentos.cs" />
     <Compile Include="Lista.cs" />
     <Compile Include="ListaDeContasCorrentes.cs" />
     <Compile Include="ListaDeObject.cs" />
-    <Compile Include="ListExtensoes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

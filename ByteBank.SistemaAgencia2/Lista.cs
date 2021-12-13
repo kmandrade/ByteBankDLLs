@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ByteBank.SistemaAgencia
 {
-    public class Lista<T>
+    public class Lista<T> 
     {
         private T[] _itens;
         private int _proximaPosicao;

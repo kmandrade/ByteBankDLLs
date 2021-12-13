@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using ByteBank.Modelos2;
 using ByteBank.SistemaAgencia;
-
+using ByteBank.SistemaAgencia2.Extensoes;
 namespace ByteBank.SistemaAgencia2
 
 {
@@ -16,17 +16,14 @@ namespace ByteBank.SistemaAgencia2
     {
         static void Main(string[] args)
         {
-            List<int> idades = new List<int>();
+            List<string> nomes = new List<string>();
+            nomes.AdicionarVarios("kelvin", "asdasd");
 
-            ListExtensoes.AdicionarVarios(idades, 12, 13, 14, 15);
             
-
-            for (int i = 0; i < idades.Count; i++)
+            for (int i =0; i<nomes.Count; i++)
             {
-                Console.WriteLine(idades[i]);
+                Console.WriteLine(nomes[i]);
             }
-             
-
 
             Console.ReadLine();
         }
