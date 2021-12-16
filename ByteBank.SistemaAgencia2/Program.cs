@@ -24,17 +24,24 @@ namespace ByteBank.SistemaAgencia2
             {
                 new ContaCorrente(432,4344),
                 new ContaCorrente(222,6666),
+                null,
                 new ContaCorrente(333,3333),
                 new ContaCorrente(111,2222),
+                null,
+                new ContaCorrente(666,1231),
                 
                 
             };
 
 
+            //var contasNaoNulas = contas.Where(conta => conta != null);
 
-            IOrderedEnumerable<ContaCorrente> contasOrdenadas =
-                contas.OrderBy(conta => conta.Numero);
+            //IOrderedEnumerable<ContaCorrente> contasOrdenadas =
+            //    contasNaoNulas.OrderBy(conta => conta.Numero);
 
+            var contasOrdenadas = contas
+                .Where(conta => conta != null) //seleciona contas onde vai me retornar true se for difernte de null
+                .OrderBy(conta => conta.Numero);//depois ordena pelo numero
             
             foreach (var conta in contasOrdenadas)
             {
